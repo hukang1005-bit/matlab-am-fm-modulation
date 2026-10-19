@@ -14,15 +14,18 @@ A MATLAB experiment exploring DSB-SC amplitude modulation and frequency modulati
 
 ## Requirements
 
-- MATLAB with Signal Processing Toolbox for `resample`
+- MATLAB with Signal Processing Toolbox for `resample`, `fir1`, and `xcorr`
 - The MATLAB Handel sample (`load handel`)
-- Two external helper functions: `design_fir_filter` and `get_aligned_snr`
 
-The helper functions are referenced by the script but are not included in this repository. Add their directory to the MATLAB path before running. The script also adds its parent directory to the path with `addpath('..')`.
+## Files
+
+- `Code_2360736.m`: main experiment script
+- `design_fir_filter.m`: lowpass and bandpass FIR filter design
+- `get_aligned_snr.m`: signal alignment and SNR calculation
 
 ## Run
 
-Open the repository folder in MATLAB, make the helper functions available, and run:
+Set the repository folder as the current folder in MATLAB and run:
 
 ```matlab
 Code_2360736
@@ -32,4 +35,4 @@ The script produces figures and console output. Audio playback examples are comm
 
 ## Status
 
-The original MATLAB script is preserved unchanged. Execution has not been verified in MATLAB; a complete run requires the external helper functions above.
+The MATLAB files are preserved unchanged. Execution has not been verified in MATLAB.
